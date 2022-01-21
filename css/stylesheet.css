@@ -35,12 +35,18 @@ a:hover {
 
 /*===== Navigation=====*/
 
-.navbar-nav {
-    display: flex;
-    align-items: flex-end;
-    width: 80%vw;
+.bg-light {
+    background: transparent !important;
 
   }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/hamburger-menu.png);
+  }
+  
+  /* .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  }  */
 
   /*===== Jumbotron =====*/
 
@@ -55,3 +61,22 @@ a:hover {
     justify-content: center;
 
   }
+
+  /*==== MEDIA QUERY ====*/
+
+  @media only screen and (max-width: 1200px) {
+    
+    .jumbotron {
+        background-position: 85%;
+    }
+
+}
+
+  @media only screen and (max-width: 600px) {
+    
+    .jumbotron {
+        background-image: url(../images/desktop\ in\ use_mobile.png);
+        background-position: center;
+    }
+
+}
