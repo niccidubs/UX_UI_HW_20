@@ -1,3 +1,25 @@
+/*===== Text =====*/
+
+h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+}
+
+/*==== Images ====*/
+
+img {
+max-width: 80%;
+} 
+
 /*===== Links =====*/
 a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -14,6 +36,22 @@ a:hover {
 /*===== Navigation=====*/
 
 .navbar-nav {
-    margin-left: auto;
-    margin-right: 0 !important;
+    display: flex;
+    align-items: flex-end;
+    width: 80%vw;
+
+  }
+
+  /*===== Jumbotron =====*/
+
+.jumbotron {
+    padding: 0;
+    background-image: url(../images/desktop\ in\ use@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 25px);
+    display: block;
+    align-items: center;
+    justify-content: center;
+
   }
