@@ -1,6 +1,10 @@
 /*===== Text =====*/
 
-h1{
+/* h1, h2, h3, p {
+    margin: 0;
+} */
+
+h1 {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
@@ -8,17 +12,17 @@ h1{
 }
 
 h2 {
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 26px;
-        font-weight: 500;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
 }
 
 /*==== Images ====*/
 
 img {
-max-width: 80%;
-} 
+    max-width: 90%;
+}
 
 /*===== Links =====*/
 a {
@@ -36,42 +40,74 @@ a:hover {
 /*===== Navigation=====*/
 
 .bg-light {
-    background: transparent !important;
+    /* background: transparent !important; */
+    background-image: url(../images/nav-bg-transparency.png);
 
-  }
+}
 
-  .navbar-light .navbar-toggler-icon {
+.navbar-light .navbar-toggler-icon {
     background-image: url(../images/hamburger-menu.png);
-  }
-  
-  /* .custom-toggler.navbar-toggler {
-    border-color: rgb(255,102,203);
-  }  */
+}
 
-  /*===== Jumbotron =====*/
+.navbar-brand img {
+    width: 200px;
+}
+
+.navbar {
+    background-image: url(../images/nav-bg-transparency.png);
+}
+
+
+.navbar-nav {
+    padding-left: 65%;
+}
+
+/*===== Jumbotron =====*/
 
 .jumbotron {
     padding: 0;
     background-image: url(../images/desktop\ in\ use@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;;
+    background-position: center;
+    ;
     height: calc(100vh - 25px);
     display: block;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
+    border-radius: 0;
 
-  }
+}
 
-  .caseStudyTitle {
-      padding: 17% 15%;
-      width: 60%;
-  }
+.caseStudyTitle {
+    padding: 17% 15%;
+    width: 60%;
+}
 
-  /*==== MEDIA QUERY ====*/
+/*==== Case Study Body ====*/
 
-  @media only screen and (max-width: 800px) {
-    
+.sectionContainer-bg {
+    margin-top: 0%;
+    padding: 35px 5% 35px;
+    background-color: #fffbe6;
+}
+
+.sectionContainer {
+    padding: 35px 5% 35px;
+}
+
+.sectionContainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*==== MEDIA QUERY ====*/
+
+@media only screen and (max-width: 800px) {
+
     .jumbotron {
         background-image: url(../images/desktop\ in\ use_tablet.png);
         background-position: cover;
@@ -84,8 +120,30 @@ a:hover {
 
 }
 
-  @media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 600px) {
+
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 95%;
+    }
+
     .jumbotron {
         background-image: url(../images/desktop\ in\ use_mobile.png);
         background-position: center;
@@ -96,10 +154,11 @@ a:hover {
         width: 85%;
     }
 
-    .caseStudyTitle h1{
+    .caseStudyTitle h1 {
         font-size: 26px;
     }
-    .caseStudyTitle h2{
+
+    .caseStudyTitle h2 {
         font-size: 20px;
     }
 }
