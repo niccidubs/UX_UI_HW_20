@@ -1,21 +1,24 @@
 /*===== Text =====*/
 
-/* h1, h2, h3, p {
-    margin: 0;
-} */
+html {
+    font-family: 'Poppins', sans-serif;
+}
 
 h1 {
     color: white;
-    font-family: 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
 }
 
 h2 {
     color: white;
-    font-family: 'Poppins', sans-serif;
     font-size: 26px;
     font-weight: 500;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 700;
 }
 
 /*==== Images ====*/
@@ -89,12 +92,14 @@ a:hover {
 
 .sectionContainer-bg {
     margin-top: 0%;
-    padding: 35px 5% 35px;
+    padding: 35px 20% 35px;
     background-color: #fffbe6;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sectionContainer {
-    padding: 35px 5% 35px;
+    padding: 35px 20% 35px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .sectionContainer img {
@@ -117,6 +122,14 @@ a:hover {
         padding: 13% 15%;
         width: 80%;
     }
+
+    .sectionContainer {
+        padding: 35px 10% 35px;
+    }
+
+    .sectionContainer-bg {
+            padding: 35px 10% 35px;
+        }
 
 }
 
@@ -141,7 +154,7 @@ a:hover {
     }
 
     img {
-        max-width: 95%;
+        max-width: 90%;
     }
 
     .jumbotron {
