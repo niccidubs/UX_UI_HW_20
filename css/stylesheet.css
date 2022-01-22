@@ -23,7 +23,7 @@ max-width: 80%;
 /*===== Links =====*/
 a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: white;
+    color: white !important;
     font-size: 24px;
     text-decoration: none;
     padding-right: 25px;
@@ -55,6 +55,7 @@ a:hover {
     background-image: url(../images/desktop\ in\ use@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;;
     height: calc(100vh - 25px);
     display: block;
     align-items: center;
@@ -62,12 +63,23 @@ a:hover {
 
   }
 
+  .caseStudyTitle {
+      padding: 17% 15%;
+      width: 60%;
+  }
+
   /*==== MEDIA QUERY ====*/
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 800px) {
     
     .jumbotron {
-        background-position: 85%;
+        background-image: url(../images/desktop\ in\ use_tablet.png);
+        background-position: cover;
+    }
+
+    .caseStudyTitle {
+        padding: 13% 15%;
+        width: 80%;
     }
 
 }
@@ -79,4 +91,15 @@ a:hover {
         background-position: center;
     }
 
+    .caseStudyTitle {
+        padding: 5% 10%;
+        width: 85%;
+    }
+
+    .caseStudyTitle h1{
+        font-size: 26px;
+    }
+    .caseStudyTitle h2{
+        font-size: 20px;
+    }
 }
