@@ -65,6 +65,38 @@ a:hover {
     padding-left: 65%;
 }
 
+/*==== Back to Top Button ====*/
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2e4159;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background-color: #fe8888;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
+}
+
+#return-to-top:hover a {
+    color: white !important;
+}
+
 /*===== Jumbotron =====*/
 
 .jumbotron {
