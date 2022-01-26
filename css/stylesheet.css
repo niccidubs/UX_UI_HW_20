@@ -146,10 +146,10 @@ a:hover {
 }
 
 .imageContainer {
-    padding: 0% 5%;
+    /* padding: 0% 5%; */
     display: block;
-    margin-left: auto;
-    margin-right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
